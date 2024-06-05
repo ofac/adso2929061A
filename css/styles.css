@@ -140,7 +140,7 @@ body {
             display: flex;
             flex-direction: column;
             gap: 0.4rem;
-            margin-top: 2rem;
+            margin-block: 2rem;
             a:is(:link, :visited) {
                 align-items: center;
                 background: var(--color-2);
