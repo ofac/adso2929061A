@@ -1,0 +1,9 @@
+div.title {
+    background-color: mediumseagreen;
+    border-radius: 1rem;
+    color: darkgreen;
+    font-size: 2.8rem;
+    padding: 4rem 1rem;
+    margin-block: 4rem;
+    text-align: center;
+}
