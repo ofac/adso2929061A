@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11- Colors</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        div.colors {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        div.colors div {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+        div.colors div div {
+            color: black;
+            height: 78px;
+            font-size: 0.55rem;
+            transition: all 0.2s ease-in;
+            width: 78px;
+        }
+        div.colors div div:first-child,
+        div.colors div div:last-child {
+            color: white;
+        }
+        div.colors div div:hover {
+            transform: scale(1.2);
+        }
+        /* Row 1*/
+        div.maroon { background-color: maroon; }
+        div.red    { background-color: red;    }
+        div.orange { background-color: orange; }
+        div.yellow { background-color: yellow; }
+        div.olive  { background-color: olive;  }
+        /* Row 2*/
+        div.purple  { background-color: purple;  }
+        div.fuchsia { background-color: fuchsia; }
+        div.white   { background-color: white;   }
+        div.lime    { background-color: lime;    }
+        div.green   { background-color: green;   }
+        /* Row 3*/
+        div.navy { background-color: navy; }
+        div.blue { background-color: blue; }
+        div.aqua { background-color: aqua; }
+        div.teal { background-color: teal; }
+        /* Row 4*/
+        div.black  { background-color: black;  }
+        div.silver { background-color: silver; }
+        div.gray   { background-color: gray;   }
+    </style>
+</head>
+<body class="css">
+    <nav>
+        <a href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+        </a>
+    </nav>
+    <main>
+        <header>
+            <h1>11- Colors </h1>
+            <h2>Are specified using predefined color names, or RGB, HEX, HSL.</h2>
+        </header>
+        <section>
+            <h3>Name Colors:</h3>
+            <div class="colors">
+                <div>
+                    <div class="maroon">marron</div>
+                    <div class="red">red</div>
+                    <div class="orange">orange</div>
+                    <div class="yellow">yellow</div>
+                    <div class="olive">olive</div>
+                </div>
+                <div>
+                    <div class="purple">purple</div>
+                    <div class="fuchsia">fuchsia</div>
+                    <div class="white">white</div>
+                    <div class="lime">lime</div>
+                    <div class="green">green</div>
+                </div>
+                <div>
+                    <div class="navy">navy</div>
+                    <div class="blue">blue</div>
+                    <div class="aqua">aqua</div>
+                    <div class="teal">teal</div>
+                </div>
+                <div>
+                    <div class="black">black</div>
+                    <div class="silver">silver</div>
+                    <div class="gray">gray</div>
+                </div>
+            </div>
+            <h3>RGB Decimal:</h3>
+            <div class="colors">
+                <div>
+                    <div class="maroon">rgb(128,0,0)</div>
+                    <div class="red">rgb(255,0,0)</div>
+                    <div class="orange">rgb(255,165,0)</div>
+                    <div class="yellow">rgb(255,255,0)</div>
+                    <div class="olive">rgb(128,128,0)</div>
+                </div>
+                <div>
+                    <div class="purple">rgb(128,0,128)</div>
+                    <div class="fuchsia">rgb(255,0,0255)</div>
+                    <div class="white">rgb(255,255,255)</div>
+                    <div class="lime">rgb(0,255,0)</div>
+                    <div class="green">rgb(0,128,0)</div>
+                </div>
+                <div>
+                    <div class="navy">rgb(0,0,128)</div>
+                    <div class="blue">rgb(0,0,255)</div>
+                    <div class="aqua">rgb(0,255,255)</div>
+                    <div class="teal">rgb(0,128,128)</div>
+                </div>
+                <div>
+                    <div class="black">rgb(0,0,0)</div>
+                    <div class="silver">rgb(192,192,192)</div>
+                    <div class="gray">rgb(128,128,128)</div>
+                </div>
+            </div>
+            <h3>RGB Hexadecimal:</h3>
+            <h3>HSL:</h3>
+        </section>
+    </main>
+</body>
+</html>
