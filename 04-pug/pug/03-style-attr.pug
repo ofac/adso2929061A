@@ -3,7 +3,7 @@ html(lang="en")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title 00- Template
+        title 03- Style Attribute
         link(rel="stylesheet", href="../../css/styles.css")
     body.pug
         nav
@@ -12,6 +12,16 @@ html(lang="en")
                     path(fill="#ffffff" d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z")
         main
             header
-                h1 00- Template
-                p Lorem
+                h1 03- Style Attribute
+                h2 Explains how to apply inline styles to an element.
             section
+                h4(
+                    style={
+                        'background-color': '#fff9',
+                        'border-radius': '1rem 0',
+                        'color': '#0009',
+                        'font-size': '4rem',
+                        'text-align': 'center'
+                    }
+                ) Styling
+            

@@ -3,8 +3,13 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>00- Template</title>
+    <title>10- Comments</title>
     <link rel="stylesheet" href="../../css/styles.css">
+    <style>
+      ol {
+          padding-left: 1rem;
+      }
+    </style>
   </head>
   <body class="pug">
     <nav><a href="../index.html">
@@ -13,10 +18,23 @@
         </svg></a></nav>
     <main>
       <header>
-        <h1>00- Template</h1>
-        <p>Lorem</p>
+        <h1>10- Comments</h1>
+        <p>Teaches how to insert comments in Pug code.</p>
       </header>
-      <section></section>
+      <section>
+        <!-- This is a comment and is visible in HTML-->
+        <h3>3 Types of comments</h3>
+        <ol>
+          <li>Line comment ( // )</li>
+          <li>Pug comment ( //- )</li>
+          <li>Multi-line comment ( show source code )</li>
+          <!--
+          This is a
+          Multi-line comment
+          You are here!
+          -->
+        </ol>
+      </section>
     </main>
   </body>
 </html>
