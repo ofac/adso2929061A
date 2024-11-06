@@ -3,8 +3,13 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>00- Template</title>
+    <title>16- Mixin</title>
     <link rel="stylesheet" href="../../css/styles.css">
+    <style>
+      ul {
+          padding-left: 1rem;
+      }
+    </style>
   </head>
   <body class="pug">
     <nav><a href="../index.html">
@@ -13,10 +18,19 @@
         </svg></a></nav>
     <main>
       <header>
-        <h1>00- Template</h1>
-        <p>Lorem</p>
+        <h1>16- Mixin</h1>
+        <h2>Explains how to create and use mixins, which function similarly to reusable components.</h2>
       </header>
-      <section></section>
+      <section>
+        <h3>List of Dragons (GOT):</h3>
+        <ul>
+                  <li class="dragon">Rhaegal</li>
+                  <li class="dragon">Viserion</li>
+                  <li class="dragon">Drogon</li>
+                  <li class="dragon">Dreamfyre</li>
+                  <li class="dragon">Tessarion</li>
+        </ul>
+      </section>
     </main>
   </body>
 </html>

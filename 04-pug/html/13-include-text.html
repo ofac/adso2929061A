@@ -3,8 +3,15 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>00- Template</title>
+    <title>13- Include CSS & JS</title>
     <link rel="stylesheet" href="../../css/styles.css">
+    <style>h4.msg {
+    text-align: center;
+    font-size: 1.8rem;
+    color: peru;
+    text-decoration: underline;
+}
+    </style>
   </head>
   <body class="pug">
     <nav><a href="../index.html">
@@ -13,10 +20,15 @@
         </svg></a></nav>
     <main>
       <header>
-        <h1>00- Template</h1>
-        <p>Lorem</p>
+        <h1>13- Include CSS & JS</h1>
+        <h2>Explains how to include external CSS and JavaScript files.</h2>
       </header>
-      <section></section>
+      <section>
+        <h4 class="msg">Hello</h4>
+      </section>
     </main>
+    <script>let msg = document.querySelector('.msg')
+msg.textContent = "Welcome: Jhon Rambo"
+    </script>
   </body>
 </html>
