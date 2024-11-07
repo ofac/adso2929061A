@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Responsive Design (Media Queries)</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+		* {
+			transition: all 0.5s ease;
+		}
+        :root {
+            --color-1: #ceff00;
+            --color-2: #fff;
+        }
+		body {
+            background: #2f2830 url(images/responsive/bg.png) no-repeat center -200px /cover;
+            background-attachment: fixed;
+            font-family: 'Poppins', sans-serif;
+		}
+		main {
+			margin: 0px auto;
+			width: 1280px;
+		}
+		header div.logo {
+			background: url(images/responsive/logo.webp) no-repeat center;
+			background-size: contain;
+			height: 360px;
+		}
+		section.boxes {
+			margin-top: 40px;
+		}
+		section.boxes div {
+			display: inline-block;
+			height: 280px;
+			margin-right: 28px;
+			position: relative;
+			width: 280px;
+		}
+		section.boxes div:first-child {
+			margin-left: 28px;
+		}
+		section.boxes div:last-child {
+			margin-right: 0px;
+		}
+		section.boxes div:nth-child(1) {
+			background: url(images/responsive/seiko.webp) no-repeat center;
+			background-size: cover;
+		}
+		section.boxes div:nth-child(2) {
+			background: url(images/responsive/aira.webp) no-repeat center;
+			background-size: cover;
+		}
+        section.boxes div:nth-child(3) {
+			background: url(images/responsive/jiji.webp) no-repeat center;
+			background-size: cover;
+		}
+        section.boxes div:nth-child(4) {
+			background: url(images/responsive/turbo-granny.webp) no-repeat center;
+			background-size: cover;
+		}
+		section.boxes div p {
+			background-color: #000b;
+            -webkit-backdrop-filter: blur(2px);
+                    backdrop-filter: blur(2px);
+            border-top: 2px solid var(--color-2);
+			color: var(--color-1);
+			bottom: 0;
+			font-size: 1.4rem;
+			height: 20px;
+			margin: 0px;
+			padding: 20px 20px 30px 20px;
+			position: absolute;
+			text-align: center;
+			width: 240px;
+			transition: all 0.4s ease-in;
+		}
+		section.boxes div:hover {
+            transform: scale(1.05);
+			cursor: pointer;
+		}
+		section.boxes div:hover p {
+			height: 60px;
+		}
+		footer {
+			margin-top: 40px;
+		}
+		footer article {
+			background-color: #0006;
+            -webkit-backdrop-filter: blur(2px);
+                    backdrop-filter: blur(2px);
+			height: 280px;
+			position: relative;
+			margin: 50px 28px;
+		}
+		footer article figure {
+			height: 280px;
+			margin: 0px;
+			width: 280px;
+		}
+		footer article.art1 figure {
+			background: #0009 url(images/responsive/momo_pc.webp) no-repeat center /contain;
+		}
+        footer article.art2 figure {
+			background: #0009 url(images/responsive/ken_pc.webp) no-repeat center /contain;
+		}
+		footer article figure,
+		footer article div {
+			display: inline-block;
+			vertical-align: top;
+		}
+		footer article div {
+			margin-left: 28px;
+			width: 600px;
+		}
+		footer article div h2 {
+            border-bottom: 2px solid var(--color-2);
+			color: var(--color-1);
+			font-size: 2rem;
+			margin: 20px 0px;
+		}
+		footer article div p {
+			color: #fff9;
+			line-height: 1.4em;
+			text-align: justify;
+		}
+		/* - - - - - - - - - - - - - - - - - - - - - */
+		@media (max-width: 1290px) {
+			main {
+				width: 680px;
+			}
+			section.boxes div {
+				margin: 28px;
+			}
+			footer article div {
+				width: 280px;
+			}
+			footer article div h2 {
+				font-size: 1.4rem;
+			}
+			footer article div p {
+				overflow: scroll;
+				height: 180px;
+			}
+		}
+		/* - - - - - - - - - - - - - - - - - - - - - */
+		@media (max-width: 690px) {
+            body {
+                background: #2f2830 url(images/responsive/bg.png) no-repeat center /cover;
+                background-attachment: fixed;
+            }
+			main {
+				width: 480px;
+			}
+			section.boxes div {
+				display: block;
+				margin: 28px auto !important;
+                width: 90%;
+                height: 340px;
+			}
+            section.boxes div p {
+                height: 20px;
+                width: 392px;
+            }
+			footer article {
+				height: 580px;
+				margin: 40px auto;
+				width: 90%;
+			}
+            footer article figure {
+                background-size: 180%;
+            }
+			footer article figure,
+			footer article div {
+				display: block;
+                width: 100%;
+			}
+			footer article div {
+				margin-left: 0px;
+			}
+            footer article div h2 {
+                text-indent: 0.8rem;
+            }
+            footer article div p {
+                padding: 0.8rem;
+            }
+		}
+	</style>
+</head>
+<body>
+	<main>
+		<header>
+			<div class="logo"></div>
+		</header>
+		<section class="boxes">
+			<div class="box1">
+				<p>Seiko</p>
+			</div>
+			<div class="box2">
+				<p>Aira</p>
+			</div>
+			<div class="box3">
+				<p>Jiji</p>
+			</div>
+			<div class="box4">
+				<p>Turbo Granny</p>
+			</div>
+		</section>
+		<footer>
+			<article class="art1">
+				<figure></figure>
+				<div class="content">
+					<h2> MOMO </h2>
+					<p>
+						A high school girl from a family of spirit mediums. Her type is hard-boiled tough guys.  She doesn't believe in aliens yet believes in ghosts. When she is abducted by the Serpoians, she awakens her hidden psychic powers.
+					</p>
+				</div>
+			</article>
+			<article class="art2">
+				<figure></figure>
+				<div class="content">
+					<h2> OKARUN </h2>
+					<p>
+						An occult freak high school boy. He doesn't believe in ghosts yet believes in aliens. He ends up forced to play tag with Turbo Granny in order to break her curse.
+					</p>
+				</div>
+			</article>
+		</footer>
+	</main>
+</body>
+</html>
