@@ -15,3 +15,15 @@ html(lang="en")
                 h1 17- Challenge
                 h2 Provides an exercise to apply the learned concepts.
             section
+                table(style="width: 100%")
+                    - var i = 1
+                    - var r = 0
+                    - var g = 250
+                    - var b = 250
+                    while i <= 10
+                        tr 
+                            td(style="background-color: rgb("+r+","+g+","+b+"); height: 50px; border-radius: 4px") 
+                                span(style="display: flex; justify-content: center; background-color: #0009; color: #fff; padding: 1rem; width: 50px; border-radius: 4px 0 0 4px") #{i}
+                            - i++
+                            - r+=25
+                            - g-=25
