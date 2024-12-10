@@ -3,10 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>00- Template</title>
+    <title>18- Visibility</title>
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../../css/styles.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style>
+        .visible {
+            text-align: center;
+            zoom: 7;
+        }
+    </style>
 </head>
 <body class="bootstrap">
     <nav>
@@ -16,11 +22,15 @@
     </nav>
     <main>
         <header>
-            <h1>00- Template </h1>
-            <h2>Description</h2>
+            <h1>18- Visibility</h1>
+            <h2>
+                Control the visibility of elements, without modifying their display, with visibility utilities.
+            </h2>
         </header>
-        <section>
-
+        <section class="content">
+            <h3 class="my-4">Example:</h3>
+            <div class="visible mx-auto w-50">🤖</div>
+            <div class="invisible">🤡</div>
         </section>
     </main>
     <script src="../js/bootstrap.min.js"></script>
