@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'Poppins-400';
+    src: url(../../fonts/Poppins-400.ttf);
+}
+@font-face {
+    font-family: 'Poppins-600';
+    src: url(../../fonts/Poppins-600.ttf);
+}
+
+body {
+    font-family: 'Poppins-400';
+    color: #446758;
+}
+
+nav.navbar.bg-custom {
+    background-color: #446758;
+    a.navbar-brand,
+    a.nav-link {
+        color: #c3e2d6;
+    }
+}
+/* Hero Section */
+div.row.hero {
+    padding-top: 102px;
+    div.col:nth-child(1) {
+        background-color: #84c1a8;
+        height: 680px;
+        h2 {
+            color: #c3e2d6
+        }
+        p.text-justify {
+            text-align: justify;
+        }
+        a.btn.bg-custom {
+            background-color: #446758;
+            color: #fff;
+        }
+    }
+    div.col:nth-child(2) {
+        background: #c3e2d6 url(../06-challenge/images/hero-picture.png) no-repeat center bottom;
+        background-size: 480px;
+        height: 680px;
+    }
+}
+/* About Section */
+div.row.about {
+    div.col:nth-of-type(1) {
+        background: #fff url(../06-challenge/images/about-picture.png) no-repeat center;
+        background-size: 440px;
+        height: 680px;
+    }
+    div.col:nth-of-type(2) {
+        h3 {
+            color: #84c1a8;
+        }
+        p.text-justify {
+            text-align: justify;
+        }
+        div.progress {
+            width: 94%;
+            background: #c3e2d6;
+            div.bg-custom {
+                background-color: #446758;
+            }
+        }
+    }
+}
+/* Services Section */
+div.row.services {
+    background-color: #c3e2d6;
+    div.col-lg-8 {
+        min-height: 680px;
+        h3 {
+            color: #fff;
+        }
+
+        div.service-box {
+            width: 320px;
+            height: 200px;
+            p {
+                color: #84c1a8;
+            }
+        }
+    }
+}
+/* Portfolio Section */
+div.row.portfolio {
+    div.col-lg-10 {
+        height: 680px;
+        background-color: #fff;
+        h3 {
+            color: #84c1a8;
+        }
+    }
+}
+/* Footer Section */
+div.row.footer {
+    div.col-lg-12 {
+        height: 400px;
+        background-color: #446758;
+        color: #C3e2d6;
+        a {
+            color: #C3e2d6;
+        }
+    }
+}
+/* Anchors Animation */
+div.row.hero,
+div.row.about,
+div.row.services,
+div.row.portfolio {
+    position: relative;
+}
+a[name=about],
+a[name=services],
+a[name=portfolio] {
+    position: absolute;
+    top: -98px;
+}
