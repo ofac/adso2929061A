@@ -18,8 +18,8 @@
 }
 
 *{
-    margin: 0; 
-    padding: 0; 
+    /* margin: 0; 
+    padding: 0;  */
 }
 
 ul[role='list'], ol[role='list']{
@@ -480,7 +480,7 @@ body.tailwind {
         }
         section {
             p {
-                color: #185269;
+                color: #6fbbd8;
                 font-size: 1rem;
             }
         }
