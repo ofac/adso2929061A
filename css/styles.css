@@ -85,6 +85,7 @@ body {
     min-height: 100vh;
     nav:not(.nav) {
         position: fixed;
+        z-index: 99;
         top: 20px;
         left: 20px;
         a:is(:link, :visited) {
@@ -199,10 +200,6 @@ body {
                 font-weight: 400;
                 border-bottom: 2px dotted #fff6;
                 margin-block: 0.6rem;
-            }
-            p {
-                color: #adff2f;
-                font-size: 1.4rem;
             }
             xmp {
                 background-color: #0009;
@@ -476,12 +473,6 @@ body.tailwind {
             img {
                 background-color: #fff6;
                 object-fit: contain;
-            }
-        }
-        section {
-            p {
-                color: #6fbbd8;
-                font-size: 1rem;
             }
         }
         menu {
