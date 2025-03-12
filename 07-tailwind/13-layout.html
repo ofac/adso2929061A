@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13- Layout (Challenge)</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body class="bg-[#1e1e1e]">
+    <main class="min-h-[100dvh]
+                 flex 
+                 justify-center 
+                 items-center">
+        <!-- Screen 01 - Welcome -->
+        <section class="welcome 
+                        w-[386px] 
+                        h-[760px]
+                        my-4
+                        rounded-[20px]
+                        overflow-hidden
+                        bg-[url(images/bg-vinotinto.png)]
+                        bg-[white]
+                        relative
+                        bg-top
+                        bg-no-repeat">
+            <div class="absolute
+                        rounded-t-[30px]
+                        bottom-0
+                        w-full
+                        h-[396px]
+                        bg-white">
+
+                    <figure class="logo
+                                h-[120px]
+                                w-[120px]
+                                mx-auto
+                                mt-[-60px]
+                                bg-[url(images/logo-vinotinto.svg)]">
+                    </figure>
+
+            </div>
+        </section>
+        <!-- Screen 02 - Signin -->
+        <section class="signin"></section>
+        <!-- Screen 03 - Signup -->
+        <section class="signup"></section>
+    </main>
+    <script src="js/tailwind.js"></script>
+</body>
+</html>
