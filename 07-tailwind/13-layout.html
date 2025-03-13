@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>13- Layout (Challenge)</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    </style>
 </head>
-<body class="bg-[#1e1e1e]">
+<body class="bg-[#1e1e1e] 
+               font-[Poppins]">
     <main class="min-h-[100dvh]
                  flex 
                  justify-center 
@@ -19,7 +23,7 @@
                         rounded-[20px]
                         overflow-hidden
                         bg-[url(images/bg-vinotinto.png)]
-                        bg-[white]
+                      bg-[white]
                         relative
                         bg-top
                         bg-no-repeat">
@@ -28,8 +32,7 @@
                         bottom-0
                         w-full
                         h-[396px]
-                        bg-white">
-
+                      bg-white">
                     <figure class="logo
                                 h-[120px]
                                 w-[120px]
@@ -37,6 +40,48 @@
                                 mt-[-60px]
                                 bg-[url(images/logo-vinotinto.svg)]">
                     </figure>
+                    <h2 class="text-center
+                               text-[32px]
+                               font-[500]
+                               mt-[38px]
+                             text-[#444]">Welcome to</h2>
+                    <h2 class="text-center
+                               text-[32px]
+                               mt-[-10px]
+                               font-[600]
+                             text-[#c61f4c]">Vinotinto</h2>
+                    <p class="text-[#888]
+                                font-[400]
+                                text-[16px]
+                                mx-auto
+                                mt-[40px]
+                                w-[272px]
+                                text-center">
+                        Enjoy the wine that what you want when you want...
+                    </p>
+                    <div class="actions
+                                w-[320px]
+                                flex
+                                mt-[42px]
+                                mx-auto">
+                        <a href="" class="w-[160px]
+                                          h-[55px]
+                                          flex
+                                          justify-center
+                                          items-center
+                                        text-white
+                                          rounded-s-[80px]
+                                        bg-[#c61f4c]">Sign In</a>
+                        <a href="" class="w-[160px]
+                                          h-[55px]
+                                          flex
+                                          justify-center
+                                          items-center
+                                        text-[#c61f4c]
+                                          border-2
+                                          rounded-e-[80px]
+                                        bg-[#fff]">Sign Up</a>
+                    </div>
 
             </div>
         </section>
