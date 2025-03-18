@@ -13,18 +13,24 @@
                font-[Poppins]">
     <main class="min-h-[100dvh]
                  flex 
+                 flex-col
                  justify-center 
                  items-center">
         <!-- Screen 01 - Welcome -->
-        <section class="welcome 
+        <section id="welcome" class="welcome 
                         w-[386px] 
-                        h-[760px]
+                        h-[720px]
+                        transition-all
+                        ease-in
+                        duration-500
+                        translate-x-[-300%]
+                        target:translate-x-[0px]
                         my-4
                         rounded-[20px]
                         overflow-hidden
                         bg-[url(images/bg-vinotinto.png)]
                       bg-[white]
-                        relative
+                        absolute
                         bg-top
                         bg-no-repeat">
             <div class="absolute
@@ -64,7 +70,7 @@
                                 flex
                                 mt-[42px]
                                 mx-auto">
-                        <a href="" class="w-[160px]
+                        <a href="#signin" class="w-[160px]
                                           h-[55px]
                                           flex
                                           justify-center
@@ -72,7 +78,7 @@
                                         text-white
                                           rounded-s-[80px]
                                         bg-[#c61f4c]">Sign In</a>
-                        <a href="" class="w-[160px]
+                        <a href="#signup" class="w-[160px]
                                           h-[55px]
                                           flex
                                           justify-center
@@ -86,9 +92,98 @@
             </div>
         </section>
         <!-- Screen 02 - Signin -->
-        <section class="signin"></section>
+        <section id="signin" class="signin 
+                                    w-[386px] 
+                                    h-[720px]
+                                    transition-all
+                                    ease-in
+                                    duration-500
+                                    translate-x-[-300%]
+                                    target:translate-x-[0px]
+                                    my-4
+                                    rounded-[20px]
+                                    overflow-hidden
+                                  bg-[white]
+                                    bg-[url(images/top-wine.svg)]
+                                    absolute
+                                    bg-top
+                                    bg-no-repeat">
+            <figure class="logo
+                           h-[114px]
+                           w-[91px]
+                           mx-auto
+                           mt-[18px]
+                           bg-[url(images/top-logo.svg)]">
+                        </figure>
+            <a href="#welcome"  class="absolute 
+                                       left-[20px]
+                                       hover:translate-x-[-6px]
+                                       transition-all
+                                       top-[20px]">
+              <img src="images/ico-back.svg" alt="Back Welcome">
+            </a>
+            <h2 class="text-[32px]
+                       mt-[4rem]
+                       text-center
+                     text-[#444]
+                       font-[500]">Sign In</h2>
+            <h3 class="text-[16px]
+                       text-center
+                     text-[#888]
+                       font-[400]">Enter your account to login</h3>
+            
+          <form action="" class="mt-10
+                                 flex 
+                                 flex-col 
+                                 gap-2">
+            <label>Email:</label>
+            <input type="text" placeholder="jeremias@gmail.com">
+            <label>Password:</label>
+            <input type="password" placeholder="***********">
+          </form>
+
+        </section>
         <!-- Screen 03 - Signup -->
-        <section class="signup"></section>
+        <section id="signup" class="signup
+                                    w-[386px] 
+                                    h-[720px]
+                                    transition-all
+                                    ease-in
+                                    duration-500
+                                    translate-x-[-300%]
+                                    target:translate-x-[0px]
+                                    my-4
+                                    rounded-[20px]
+                                    overflow-hidden
+                                    bg-[url(images/top-wine.svg)]
+                                  bg-[white]
+                                    absolute
+                                    bg-top
+                                    bg-no-repeat">
+          <figure class="logo
+                           h-[114px]
+                           w-[91px]
+                           mx-auto
+                           mt-[18px]
+                           bg-[url(images/top-logo.svg)]">
+                        </figure>
+            <a href="#welcome"  class="absolute 
+                                       left-[20px]
+                                       hover:translate-x-[-6px]
+                                       transition-all
+                                       top-[20px]">
+            <img src="images/ico-back.svg" alt="Back Welcome">
+            </a>
+            <h2 class="text-[32px]
+                       mt-[4rem]
+                       text-center
+                     text-[#444]
+                       font-[500]">Sign Up</h2>
+            <h3 class="text-[16px]
+                       text-center
+                     text-[#888]
+                       font-[400]">Create your account</h3>
+        </section>
     </main>
     <script src="js/tailwind.js"></script>
 </body>
